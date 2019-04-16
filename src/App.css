@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.media-ctn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.jumbotron {
+  padding-bottom: 25px;
+}
+
+.portfolio-ctn {
+  /* display: flex; */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-ctn {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 15px;
+  justify-self: center;
+}
