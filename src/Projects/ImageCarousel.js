@@ -8,8 +8,9 @@ const ImageCarousel = (props) => {
       {props.imageUrls.map((url, i) => {
         return (<Carousel.Item key={i}>
           <img
+            alt=""
             className="d-block w-100"
-            src={url}
+            src={`${url}`}
           />
         </Carousel.Item>)
       })}

@@ -21,8 +21,7 @@ class ProjectModal extends Component {
   render() {
     return (
       <div>
-        <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={this.props.project.imageUrls[0]} />
+        <Card style={{ width: '18rem', height: '8rem' }}>
           <Card.Body>
             <Card.Title>{this.props.project.title}</Card.Title>
             <Button onClick={this.handleShow} variant="light">More Info</Button>
@@ -37,28 +36,32 @@ class ProjectModal extends Component {
               <p>{this.props.project.description}</p>
               <Table striped bordered hover size="sm">
                 <tbody>
-                  <tr>
+                  {this.props.project.frontend && <tr>
                     <td>Front-End:</td>
                     <td>{this.props.project.frontend}</td>
-                  </tr>
-                  <tr>
+                  </tr>}
+                  {this.props.project.backend && <tr>
                     <td>Back-End:</td>
                     <td>{this.props.project.backend}</td>
-                  </tr>
-                  <tr>
+                  </tr>}
+                  {this.props.project.deployment && <tr>
                     <td>Deployment:</td>
                     <td>{this.props.project.deployment}</td>
-                  </tr>
+                  </tr>}
+                  {this.props.project.hardware && <tr>
+                    <td>Hardware:</td>
+                    <td>{this.props.project.hardware}</td>
+                  </tr>}
                 </tbody>
               </Table>
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary" href={this.props.project.websiteUrl} target="_blank">
+              {this.props.project.websiteUrl && <Button variant="secondary" href={this.props.project.websiteUrl} target="_blank">
                 Website
-                  </Button>
-              <Button variant="secondary" href={this.props.project.githubUrl} target="_blank">
+                  </Button>}
+              {this.props.project.githubUrl && <Button variant="secondary" href={this.props.project.githubUrl} target="_blank">
                 Github
-                  </Button>
+                  </Button>}
               <Button variant="secondary" onClick={this.handleClose}>
                 Close
                   </Button>

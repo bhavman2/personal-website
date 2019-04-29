@@ -7,7 +7,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  max-width: 350px;
+  max-width: 300px;
   margin: 0 auto;
   padding-top: 15px;
 }
@@ -17,7 +17,6 @@
 }
 
 .portfolio-ctn {
-  /* display: flex; */
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -26,9 +25,18 @@
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .card {
   margin: 15px;
-  justify-self: center;
+}
+
+.quote-ctn {
+  display: flex;
+  margin: 0 auto;
+  max-width: 400px;
+  max-height: 300px;
+  padding: 50px;
+  font-style: italic;
 }
