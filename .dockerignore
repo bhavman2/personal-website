@@ -1,0 +1,8 @@
+node_modules
+Dockerfile
+.DS_Store
+.gitignore
+README.md
+public
+Projects.json
+quotes.json

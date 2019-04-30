@@ -6,6 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 Projects.json
 quotes.json
+build
 
 # Runtime data
 pids
